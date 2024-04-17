@@ -1,0 +1,251 @@
+{
+    "Title": "Wake Up",
+    "Credits": "Created by Henry Christopher (hachrist@ucsc.edu).",
+    "InitialLocation": "WakeUp",
+    "Locations": {
+        "WakeUp": {
+            "Body": "You are drawn into consciousness in a cold place. You lie amidst the trees and brush, and the moon shines bright before a darkened sky. You have no memory of coming to this place. A flickering flame catches your eye; a dwelling atop a small hill, not far from here",
+            "Choices": [
+                {
+                    "Text": "Make for the Dwelling",
+                    "Target": "Dwelling"
+                }
+            ]
+        },
+        "Dwelling": {
+            "Body": "With nowhere else to go, you make for the dwelling in the hopes of finding shelter from the cold. It's not long before you arrive. Light pours from within the building, but when you try to peer through the window, you see nothing but a blur behind the glass. The door hangs slightly ajar, beckoning you to enter",
+            "Choices": [
+                {
+                    "Text": "Enter",
+                    "Target": "DwellingInterior"
+                }
+            ]
+        },
+        "DwellingInterior": {
+            "Body": "As you step inside, you are briefly blinded by the strength of the light. As your eyes adjust, you observe a perculiar scene. On one end of the room sits an overgrown vulture and a large wheel, like something out of a gameshow. On the other, a velvet topped table hosting a game of cards, currently being played by three aging men. In the center of the room is a golden birdcage, housing a jet black crow.",
+            "Choices": [
+                {
+                    "Text": "Examine the Crow",
+                    "Target": "Sage"
+                },
+                {
+                    "Text": "Examine the Vulture",
+                    "Target": "Game1"
+                },
+                {
+                    "Text": "Examine the Card Game",
+                    "Target": "Game2"
+                }
+            ]
+        },
+        "Sage": {
+            "Body": "The crow draws your interest. As you approach the cage, the crow's beak snaps open and begins speaking in a droning tone: 'Welcome, empty one. I am Phoenix, master of this domain. Your fate is grim, and in my graciousness, I offer you a chance at redemption. Try your hand in games of chance, and rob my guests of what little fate they possess. When your fate is restored, return to me, and I shall return you to reality'",
+            "Choices": [
+                {
+                    "Text": "Choose a Game",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "ChooseGame": {
+            "Body": "Two games are available to play, the Wheel of Misfortune, and a game of Poker. There is also a jar of seeds within Phoenix's cage, representing your fate",
+            "Choices": [
+                {
+                    "Text": "Wheel of Misfortune",
+                    "Target": "Game1"
+                },
+                {
+                    "Text": "Poker",
+                    "Target": "Game2"
+                },
+                {
+                    "Text": "Witness Your Fate",
+                    "Target": "Count"
+                }
+            ]
+        },
+        "Game1": {
+            "Body": "You are drawn to the Wheel of Misfortune; a game of luck, if such a thing exists. The game is operated by an overgrown vulture, gnawing on a withering bone",
+            "Body2": "You examine the wheel accompanied by the vulture. As you approach, the vulture launches itself at you, rebuking your attempt to get closer",
+            "Choices": [
+                {
+                    "Text": "Play",
+                    "Target": "Wheel"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Game2": {
+            "Body": "You are drawn to the poker game; a game of guile. The three elders offer you a seat at the table, and introduce themselves as Henry, Julian, and Arjun",
+            "Body2": "You move to examine the table; the three turn in unison, staring at you with a hateful expression. You decide not to join just yet",
+            "Choices": [
+                {
+                    "Text": "Sit Down",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand1": {
+            "Body": "As you sit down, Henry flips 5 cards right side up, revealing the community cards. A nine of heats, a ten of hearts, a jack of hearts, a jack of clubs, and a queen of diamonds is revealed. You flip over your cards and find you have a nine of diamonds and a queen of diamonds; a two-pair",
+            "Choices": [
+                {
+                    "Text": "Call",
+                    "Target": "Hand1Call"
+                },
+                {
+                    "Text": "Fold",
+                    "Target": "Fold"
+                }
+            ]
+        },
+        "Hand1Win": {
+            "Body": "Everyone flips their cards: Some of the other players have two-pairs, but your queen pair is the highest. You win!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand1Lose": {
+            "Body": "Everyone flips their cards: The best hand belongs to Julian: a king of diamonds, giving him a straight. You lose!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand2": {
+            "Body": "As you sit down, Henry flips 5 cards right side up, revealing the community cards. A nine of heats, a ten of hearts, a jack of hearts, a jack of clubs, and a queen of diamonds is revealed. You flip over your cards and find you have a four of spades and a King of Clubs; a straight",
+            "Choices": [
+                {
+                    "Text": "Call",
+                    "Target": "Hand2Call"
+                },
+                {
+                    "Text": "Fold",
+                    "Target": "Fold"
+                }
+            ]
+        },
+        "Hand2Win": {
+            "Body": "Everyone flips their cards: Henry had a two-pair, Julian had nothing, and Arjun had a three of a kind with jacks. You win!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand2Lose": {
+            "Body": "Everyone flips their cards: Arjun had a seven and ace of hearts, giving him a flush. You lose!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand3": {
+            "Body": "As you sit down, Henry flips 5 cards right side up, revealing the community cards. A nine of heats, a ten of hearts, a jack of hearts, a jack of clubs, and a queen of diamonds is revealed. You flip over your cards and find you have a six of hearts and a three of hearts; a flush",
+            "Choices": [
+                {
+                    "Text": "Call",
+                    "Target": "Hand3Call"
+                },
+                {
+                    "Text": "Fold",
+                    "Target": "Fold"
+                }
+            ]
+        },
+        "Hand3Win": {
+            "Body": "Everyone flips their cards: Henry had a two-pair, Julian had a straight, and Arjun had a three of a kind. You win!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Hand3Lose": {
+            "Body": "Everyone flips their cards: Henry had two jacks, giving him a four of a kind. You lose!",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Fold": {
+            "Body": "You fold, losing the ante",
+            "Choices": [
+                {
+                    "Text": "Play Again",
+                    "Target": "Poker"
+                },
+                {
+                    "Text": "Cash out",
+                    "Target": "ChooseGame"
+                }
+            ]
+        },
+        "Count": {
+            "Body": "",
+            "Choices": [
+                {
+                    "Text": "Wheel of Misfortune",
+                    "Target": "Game1"
+                },
+                {
+                    "Text": "Poker",
+                    "Target": "Game2"
+                }
+            ]
+        },
+        "Oblivion": {
+            "Body": "You hear Phoenix cry out from his cage: 'Your fate is sealed, and your time is up. May oblivion swallow you gently'. Darkness surrounds you, and you slowly fade away"
+        },
+        "Reality": {
+            "Body": "You hear Phoenix cry out from his cage: 'Your fate is yours again. Back to reality with you. Pray you never find yourself in my domain again'. You open your eyes, and find yourself in a hospital room, surrounded by the crying faces of family and friends"
+        }
+    },
+    "WheelOfMisfortune": {
+        "Woe": "The Vulture's beak twists into a wry grin as it speaks your fate: Woe is you, empty one. Your fate is thus deducted",
+        "Weal": "The Vulture's eyes narrow into a squint as it speaks your fate: Weal is you, empty one. Your fate is thus renewed",
+        "Wonder": "The Vulture's body bursts into flame as it speaks your fate a final time: Wonder is you, empty one. Though you are empty no longer..."
+    }   
+    
+}
